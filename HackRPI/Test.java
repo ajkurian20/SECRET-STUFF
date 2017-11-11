@@ -56,6 +56,9 @@ public class Test
                 System.out.println("Please enter a valid option");
             }
         }
+        //End part I, beginning part II (Formal)
+        
+        
 
     }
 }
