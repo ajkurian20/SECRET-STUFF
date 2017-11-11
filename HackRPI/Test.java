@@ -11,6 +11,27 @@ public class Test
     private String status = ""; //Determines if player if Alive or Dead
 
     public String choiceA(){
+        System.out.println("You decide to go back to bed");
+        System.out.println("After deciding that you have wasted a majority of your time \n in bed, you study until it is luch time \n When you get to the Dinning Hall, do you decide to go in or to get the To-Go option?");
+        System.out.println("(A) Dinning Hall \n(B) To-Go");
+        Scanner sc = new Scanner(System.in);
+        String input1 = sc.next();
+        boolean validLetter = false;
+        while (!validLetter)
+        {
+            if (input1.equalsIgnoreCase("A"))
+            {
+                return "D";
+            }   
+            else if (input1.equalsIgnoreCase("B"))
+            {
+                return "AE";
+            }
+            else
+            {
+                System.out.println("Enter a valid option");
+            }
+        }
         return "";
     }
 
@@ -19,47 +40,10 @@ public class Test
     }
 
     public String choiceC(){
-     return ""; 
+        return "";
     }
 
     public String choiceD(){
-        System.out.println("You chose to do homework. You open up your planner and see that you have to finish both english and math homework");
-        System.out.println("Would you like to do math or english");
-        System.out.println("(enter 'a' to do math or 'b' to do english)");
-        Scanner sc = new Scanner(System.in);
-        String choice = sc.next();
-        while(!choice.equalsIgnoreCase("a") || !choice.equalsIgnoreCase("b")){
-        System.out.println("Invalid Selection, enter valid input");
-        choice = sc.next();
-        }
-        if (choice.equalsIgnoreCase("a")){
-        System.out.println("You choose to do math homework.  ");
-        System.out.println(".");
-        System.out.println(".");
-        System.out.println(".");
-        System.out.println("You have been working on math for a solid hour");
-    
-    
-    }
-        else if (choice.equalsIgnoreCase("b")){
-                ;
-            }    
-            else{
-                System.out.println("Please enter a valid option");
-            }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         return "";
     }
 
@@ -87,7 +71,7 @@ public class Test
             }
         }
         //End part I, beginning part II (Formal)
-        
+
         System.out.println("Finally you get to go to the formal with all of your friends.");
         System.out.println("After a couple hours of dancing, you get overheated and go outside");
 
