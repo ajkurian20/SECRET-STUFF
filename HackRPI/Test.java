@@ -19,10 +19,47 @@ public class Test
     }
 
     public String choiceC(){
-        return "";
+     return ""; 
     }
 
     public String choiceD(){
+        System.out.println("You chose to do homework. You open up your planner and see that you have to finish both english and math homework");
+        System.out.println("Would you like to do math or english");
+        System.out.println("(enter 'a' to do math or 'b' to do english)");
+        Scanner sc = new Scanner(System.in);
+        String choice = sc.next();
+        while(!choice.equalsIgnoreCase("a") || !choice.equalsIgnoreCase("b")){
+        System.out.println("Invalid Selection, enter valid input");
+        choice = sc.next();
+        }
+        if (choice.equalsIgnoreCase("a")){
+        System.out.println("You choose to do math homework.  ");
+        System.out.println(".");
+        System.out.println(".");
+        System.out.println(".");
+        System.out.println("You have been working on math for a solid hour");
+    
+    
+    }
+        else if (choice.equalsIgnoreCase("b")){
+                ;
+            }    
+            else{
+                System.out.println("Please enter a valid option");
+            }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         return "";
     }
 
