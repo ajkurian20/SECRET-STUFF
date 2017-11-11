@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class Test
 {
     //Instance Variables
-    private int loop = 0; //Equals 1 if you die after passing first round
     private String status = ""; //Determines if player if Alive or Dead
 
     public String choiceA(){
@@ -33,9 +32,6 @@ public class Test
             Scanner sc = new Scanner(System.in);
             System.out.println("Good morning! You look at the clock and realize that you woke up late!");
             System.out.println("Do you: \n(A) Go back to bed \n(B) Eat food \n(C) Go to the gym \n(D) Work on homework?");
-            if (loop == 1){
-                System.out.println("(E) Go to the killer's house");
-            }
             String result1 = sc.next();
             if (result1.equalsIgnoreCase("A")){
                 status = choiceA();
@@ -49,16 +45,14 @@ public class Test
             else if (result1.equalsIgnoreCase("D")){
                 status = choiceB();
             }
-            else if (result1.equalsIgnoreCase("E")){
-                //Goes to Killer's House (Part II)
-            }
             else{
                 System.out.println("Please enter a valid option");
             }
         }
         //End part I, beginning part II (Formal)
         
-        
+        System.out.println("Finally you get to go to the formal with all of your friends.");
+        System.out.println("After a couple hours of dancing, you get overheated and go outside");
 
     }
 }
